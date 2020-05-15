@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A340E56246E311F00AC7CFF /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A340E55246E311F00AC7CFF /* WeatherData.swift */; };
+		2A451587246DF79A00F2AB87 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A451586246DF79A00F2AB87 /* WeatherManager.swift */; };
 		2A7F77DA246D96B8004F58AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7F77D9246D96B8004F58AF /* AppDelegate.swift */; };
 		2A7F77DC246D96B8004F58AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7F77DB246D96B8004F58AF /* SceneDelegate.swift */; };
 		2A7F77DE246D96B8004F58AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7F77DD246D96B8004F58AF /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A340E55246E311F00AC7CFF /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		2A451586246DF79A00F2AB87 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 		2A7F77D6246D96B8004F58AF /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7F77D9246D96B8004F58AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A7F77DB246D96B8004F58AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A451585246DF77A00F2AB87 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2A451586246DF79A00F2AB87 /* WeatherManager.swift */,
+				2A340E55246E311F00AC7CFF /* WeatherData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2A451588246DFAE100F2AB87 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2A7F77DD246D96B8004F58AF /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2A451589246DFAF300F2AB87 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2A7F77DF246D96B8004F58AF /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		2A7F77CD246D96B8004F58AF = {
 			isa = PBXGroup;
 			children = (
@@ -58,8 +87,9 @@
 			children = (
 				2A7F77D9246D96B8004F58AF /* AppDelegate.swift */,
 				2A7F77DB246D96B8004F58AF /* SceneDelegate.swift */,
-				2A7F77DD246D96B8004F58AF /* ViewController.swift */,
-				2A7F77DF246D96B8004F58AF /* Main.storyboard */,
+				2A451585246DF77A00F2AB87 /* Model */,
+				2A451588246DFAE100F2AB87 /* Controller */,
+				2A451589246DFAF300F2AB87 /* View */,
 				2A7F77E2246D96BA004F58AF /* Assets.xcassets */,
 				2A7F77E4246D96BA004F58AF /* LaunchScreen.storyboard */,
 				2A7F77E7246D96BA004F58AF /* Info.plist */,
@@ -139,7 +169,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A7F77DE246D96B8004F58AF /* ViewController.swift in Sources */,
+				2A340E56246E311F00AC7CFF /* WeatherData.swift in Sources */,
 				2A7F77DA246D96B8004F58AF /* AppDelegate.swift in Sources */,
+				2A451587246DF79A00F2AB87 /* WeatherManager.swift in Sources */,
 				2A7F77DC246D96B8004F58AF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,7 +326,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.emerdeveloper.Weather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +344,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.emerdeveloper.Weather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
